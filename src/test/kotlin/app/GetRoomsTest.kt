@@ -12,7 +12,7 @@ internal class GetRoomsTest {
     @DisplayName("it should return a list of rooms")
     fun itShouldReturnAListOfRooms() {
         //GIVEN
-        val roomStub: IRoomRepository = RoomStub()
+        val roomStub: IRoomRepository = RoomRepositoryStub()
         val expected = roomStub.getRoomList()
 
         //WHEN

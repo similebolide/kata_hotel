@@ -13,6 +13,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("org.mockito:mockito-inline:3.11.0")
+    testImplementation("org.mockito:mockito-junit-jupiter:3.11.0")
+    testImplementation("org.mockito:mockito-core:3.11.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:3.2.0")
 }
 
 tasks.test {

@@ -3,7 +3,7 @@ package app
 import CuzcoHotelApp.rooms.IRoomRepository
 import CuzcoHotelApp.rooms.domain.Room
 
-class RoomStub: IRoomRepository {
+class RoomRepositoryStub: IRoomRepository {
     override fun getRoomList(): List<Room>{
         return listOf(
             Room(
@@ -19,5 +19,9 @@ class RoomStub: IRoomRepository {
                 capacity = 4
             )
         )
+    }
+
+    override fun findRoomsForAmountOfGuests(numberOfGuests: Int): List<Room> {
+        return emptyList()
     }
 }
